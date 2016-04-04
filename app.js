@@ -21,16 +21,7 @@ app.controller("redditController", function($scope) {
       postDate: Date.now(),
       posterLoc: "Denver",
       postDescrip: "Hawaii is the 50th and most recent state of the United States of America, receiving statehood on August 21, 1959.[23] Hawaii is the only U.S. state located in Oceania and the only one composed entirely of islands. It is the northernmost island group in Polynesia, occupying most of an archipelago in the central Pacific Ocean. Hawaii is the only U.S. state not located in the Americas. The state does not observe daylight saving time.",
-      comments: [
-        {
-          text: 'I love this post!',
-          username: 'Hoshi'
-        },
-        {
-          text: 'This is a pretty good post.',
-          username: 'Astro'
-        }
-      ]
+      comments: []
     },
     {
       postTitle: "Bali",
@@ -42,16 +33,7 @@ app.controller("redditController", function($scope) {
       posterName: "Kathy Dieser",
       posterLoc: "Denver",
       postDescrip: "Bali is an island and province of Indonesia. The province includes the island of Bali and a few smaller neighbouring islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan. It is located at the westernmost end of the Lesser Sunda Islands, between Java to the west and Lombok to the east. Its capital of Denpasar is located at the southern part of the island.",
-      comments: [
-        {
-          text: 'I love this post!',
-          username: 'Hoshi'
-        },
-        {
-          text: 'This is a pretty good post.',
-          username: 'Astro'
-        }
-      ]
+      comments: []
     }
   ];
   $scope.addPost = function (post) {
