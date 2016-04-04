@@ -17,7 +17,8 @@
   </div>
   <div class="container">
     <div class="row">
-      <form ng-show="form" name="newPost" ng-click="addPost(post)">
+      <form ng-show="form" name="newPost" ng-submit="addPost(post)">
+        <!-- {{ post | json }} -->
         <div class="row">
         <div class="six columns">
           <label for="postTitle">Post Title</label>

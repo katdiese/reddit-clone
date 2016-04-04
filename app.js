@@ -36,6 +36,7 @@ app.controller("redditController", function($scope) {
       comments: []
     }
   ];
+  $scope.post = {};
   $scope.addPost = function (post) {
     $scope.post.score = 0;
     $scope.post.comments = [];
