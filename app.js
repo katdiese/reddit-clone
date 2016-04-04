@@ -9,6 +9,7 @@ app.controller("redditController", function($scope) {
       $scope.form = false;
     }
   }
+  $scope.comment = {};
   $scope.posts = [
     {
       postTitle: "Hawaii",
@@ -65,7 +66,7 @@ app.controller("redditController", function($scope) {
   }
   $scope.addComment = function(post, comment) {
     post.comments.push(comment);
-    comment = {};
+    $scope.comment = {};
   }
   $scope.showComments = function(state) {
     if(state.commentsOpen == false) {
